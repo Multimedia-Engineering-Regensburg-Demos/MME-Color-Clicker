@@ -11,7 +11,7 @@ function createElementForSquare(square) {
 }
 
 function onClick(event) {
-    let target = event.originalTarget;
+    let target = event.target;
     if (target.classList.contains("square")) {
         let event = new Event("squareclicked", {
             id: target.getAttribute("data-id"),
